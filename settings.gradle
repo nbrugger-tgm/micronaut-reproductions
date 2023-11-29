@@ -2,3 +2,4 @@ rootProject.name = 'micronaut-reproductions'
 includeBuild("921")
 includeBuild("6918")
 includeBuild("inner_class_bean")
+includeBuild("894")
