@@ -20,13 +20,14 @@ class DemoTest {
     }
 
     @Test
-    void canInjectClassCallingInConstructor() {
+    void canInjectClassCallingInConstructor2_withFactory() {
         ClassCallingInConstructor classCallingInConstructor = application.getApplicationContext().getBean(ClassCallingInConstructor.class);
         Assertions.assertThrows(ValidationException.class, ()->classCallingInConstructor.setAge(null));
         Assertions.assertNotNull(classCallingInConstructor);
     }
+
     @Test
-    void canInjectClassCallingInConstructor2() {
+    void canInjectClassCallingInConstructor_withSingelton() {
         ClassCallingInConstructor2 classCallingInConstructor = application.getApplicationContext().getBean(ClassCallingInConstructor2.class);
         Assertions.assertThrows(ValidationException.class, ()->classCallingInConstructor.setAge(null));
         Assertions.assertNotNull(classCallingInConstructor);
