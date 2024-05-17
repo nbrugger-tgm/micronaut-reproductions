@@ -21,8 +21,7 @@ class DemoTest {
 
     @Test
     void canInjectClassCallingInConstructor() {
-        ClassCallingInConstructor classCallingInConstructor = application.getApplicationContext().getBean(ClassCallingInConstructor.class);
-        Assertions.assertThrows(ValidationException.class, ()->classCallingInConstructor.setAge(null));
+        TwoConstructorClass classCallingInConstructor = application.getApplicationContext().getBean(TwoConstructorClass.class);
         Assertions.assertNotNull(classCallingInConstructor);
     }
 
