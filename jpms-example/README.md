@@ -7,5 +7,5 @@ This is a working example of using Micronaut 4.6.3 with Java 21 and JPMS.
 
 ### Run
 
-- Run the application with `./gradlew run`
+- Run the application with `../gradlew run`
 - `curl localhost:8080`
