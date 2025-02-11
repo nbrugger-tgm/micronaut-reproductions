@@ -12,11 +12,13 @@ public class ExampleController implements ExampleApi {
     }
 
     @Override
+    @PermitAll
     public String withQuery(String query) {
         return "I got a query yay";
     }
 
     @Override
+    @PermitAll
     public String withHeader(String header) {
         return "I got a header yay";
     }
